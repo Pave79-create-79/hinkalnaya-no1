@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11110f">
+<meta name="description" content="Хинкальная №1 в Новомосковске — настоящая грузинская кухня. Проводим Дни рождения, юбилеи, свадьбы, корпоративы, поминальные обеды.">
+<title>Хинкальная №1 — настоящая грузинская кухня в Новомосковске</title>
+
+<link rel="canonical" href="https://hinkalnaya-no1.ru/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Хинкальная №1">
+<meta property="og:title" content="Хинкальная №1 — настоящая грузинская кухня">
+<meta property="og:description" content="Грузинская кухня, банкеты, юбилеи, свадьбы и корпоративы в Новомосковске.">
+<meta property="og:image" content="https://hinkalnaya-no1.ru/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://hinkalnaya-no1.ru/">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Хинкальная №1 — настоящая грузинская кухня">
+<meta name="twitter:description" content="Грузинская кухня и праздники в Новомосковске.">
+<meta name="twitter:image" content="https://hinkalnaya-no1.ru/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- JSON-LD Restaurant -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Хинкальная №1",
+  "description": "Настоящая грузинская кухня. Проводим Дни рождения, юбилеи, свадьбы, корпоративы, поминальные обеды.",
+  "servesCuisine": "Грузинская",
+  "priceRange": "₽₽",
+ "telephone": "+7 963 939-70-11",
+"contactPoint": [
+  {
+    "@type": "ContactPoint",
+    "telephone": "+7 930 891-30-28",
+    "contactType": "reservations"
+  }
+],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Кукунина 9Гк1",
+    "addressLocality": "Новомосковск",
+    "addressRegion": "Тульская область",
+    "postalCode": "301650",
+    "addressCountry": "RU"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00",
+    "closes": "23:00"
+  }],
+  "url": "https://hinkalnaya-no1.ru/",
+  "image": "https://hinkalnaya-no1.ru/og-cover.jpg"
+}
+</script>
+
+<style>
+:root{
+  --bg:#11110f;
+  --panel:#1b1a17;
+  --gold:#c8a96a;
+  --gold-hover:#d9bd80;
+  --cream:#f3eee4;
+  --muted:#c5beb1;
+  --line:rgba(200,169,106,.25);
+  --font-body:'Manrope', Arial, Helvetica, sans-serif;
+  --font-display:'Cormorant Garamond', Georgia, serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--cream);
+  font-family:var(--font-body);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+
+.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+@media (max-width:640px){.wrap{width:calc(100% - 32px)}}
+
+/* ===== Шапка ===== */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(17,17,15,.85);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-family:var(--font-display);font-size:22px;letter-spacing:.06em;white-space:nowrap}
+.brand b{color:var(--gold);font-weight:600}
+.nav-links{display:flex;gap:26px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#e1d9ca}
+.nav-links a{position:relative;padding:6px 0}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;
+  transition:transform .25s ease;
+}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:16px}
+.phone-group{display:flex; flex-direction:column; align-items:flex-end; gap:2px;}
+.phone{font-size:14px;color:var(--gold);white-space:nowrap;font-weight:600; line-height: 1.2;}
+.phone:hover{color:var(--gold-hover)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 22px;border-radius:999px;
+  font-size:14px;font-weight:600;letter-spacing:.04em;
+  border:1px solid transparent;cursor:pointer;
+  transition:background .2s,color .2s,transform .15s,border-color .2s;
+}
+.btn-gold{background:var(--gold);color:#151310}
+.btn-gold:hover{background:var(--gold-hover)}
+.btn-gold:active{transform:translateY(1px)}
+.btn-outline{background:transparent;color:var(--gold);border-color:var(--gold)}
+.btn-outline:hover{background:var(--gold);color:#151310}
+
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;padding:8px;cursor:pointer}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--cream);transition:transform .25s,opacity .2s}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.mobile-menu{
+  display:flex;flex-direction:column;gap:16px;padding:20px;
+  border-top:1px solid var(--line);background:var(--bg);
+}
+.mobile-menu[hidden]{display:none}
+
+@media (max-width:900px){
+  .nav-links{display:none}
+  .nav-toggle{display:flex}
+  .nav-actions .phone-group{display:none}
+}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;min-height:100vh;min-height:100svh;
+  display:flex;align-items:center;overflow:hidden;isolation:isolate;
+}
+.hero-media{position:absolute;inset:0;z-index:-1}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.5)}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,rgba(10,10,9,.95),rgba(10,10,9,.7) 50%,rgba(10,10,9,.3));
+}
+.hero-content{padding:120px 0 80px;max-width:640px}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:13px;margin:0 0 16px;font-weight:600}
+.hero h1{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(48px,8vw,96px);line-height:1.05;margin:0 0 20px;
+}
+.hero h1 span{color:var(--gold)}
+.lead{font-size:clamp(16px,1.8vw,20px);color:var(--cream);max-width:52ch;margin:0 0 32px;}
+
+/* ===== Общие секции ===== */
+.section{padding:96px 0}
+.section-alt{background:var(--panel)}
+.section-title{
+  font-family:var(--font-display);font-size:clamp(36px,4vw,52px);
+  font-weight:600;margin:0 0 40px;
+}
+
+/* ===== О нас ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split img{width:100%;height:auto;border-radius:14px;box-shadow: 0 10px 30px rgba(0,0,0,0.5);}
+@media (max-width:800px){.split{grid-template-columns:1fr;gap:32px}}
+.split p { font-size: 18px; line-height: 1.8; }
+
+/* ===== Новогодний блок ===== */
+.ny-block {
+  background: linear-gradient(135deg, rgba(200,169,106,0.1) 0%, rgba(27,26,23,1) 100%);
+  border: 1px solid var(--gold);
+  border-radius: 14px;
+  padding: 40px;
+  text-align: center;
+}
+.ny-block h2 { color: var(--gold); font-family: var(--font-display); font-size: clamp(28px, 3vw, 42px); margin-top: 0;}
+.ny-block p { font-size: 18px; margin-bottom: 20px; }
+.ny-emoji { font-size: 28px; margin: 20px 0 0 0; letter-spacing: 5px; }
+
+/* ===== Меню ===== */
+.menu-category { margin-bottom: 40px; }
+.menu-category-title {
+  font-family: var(--font-display);
+  color: var(--gold);
+  font-size: 32px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.menu-list { list-style: none; padding: 0; margin: 0; }
+.menu-item { display: flex; align-items: baseline; margin-bottom: 16px; }
+.menu-item-name { font-weight: 600; font-size: 16px; color: var(--cream); white-space: nowrap; }
+.menu-item-desc { font-size: 14px; color: var(--muted); margin-top: 4px; display: block; white-space: normal; }
+.menu-item-dots { flex-grow: 1; border-bottom: 1px dotted rgba(200,169,106,0.4); margin: 0 15px; position: relative; top: -4px; }
+.menu-item-weight { color: var(--muted); font-size: 14px; margin-right: 15px; white-space: nowrap; }
+.menu-item-price { color: var(--gold); font-weight: 600; font-size: 18px; white-space: nowrap; }
+
+/* Блок для PDF */
+.pdf-download-block {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background: var(--panel);
+  border-radius: 14px;
+  border: 1px dashed var(--line);
+}
+.pdf-download-block p { margin-bottom: 20px; font-size: 18px; color: var(--muted); }
+
+/* ===== Контакты ===== */
+.contacts{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:start}
+@media (max-width:800px){.contacts{grid-template-columns:1fr}}
+.contacts p{margin:0 0 15px; font-size: 18px;}
+.contacts a { color: var(--gold); font-weight: bold; font-size: 22px; }
+.map iframe{display:block;border:0;border-radius:14px;width:100%; height:400px;}
+
+/* ===== Кнопка мобильного звонка (снизу экрана) ===== */
+.mobile-call-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 400px;
+  background: var(--gold);
+  color: #151310;
+  text-align: center;
+  padding: 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  z-index: 100;
+  transition: background 0.2s;
+}
+.mobile-call-btn:hover { background: var(--gold-hover); }
+
+@media (max-width: 900px) {
+  .mobile-call-btn { display: block; }
+  body { padding-bottom: 80px; }
+}
+
+/* ===== Footer ===== */
+.site-footer{border-top:1px solid var(--line);padding:28px 0;font-size:14px;color:var(--muted)}
+.footer-inner{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.footer-inner a:hover{color:var(--gold)}
+
+/* ===== Модальное окно соглашения ===== */
+.modal-overlay {
+  display: none;
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  align-items: center; justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.active { display: flex; }
+.modal-content {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  max-width: 800px; width: 100%;
+  max-height: 90vh; overflow-y: auto;
+  padding: 40px;
+  position: relative;
+  color: var(--cream);
+}
+.modal-close {
+  position: absolute; top: 15px; right: 20px;
+  background: none; border: none; color: var(--muted);
+  font-size: 28px; cursor: pointer; transition: color 0.2s;
+}
+.modal-close:hover { color: var(--gold); }
+.modal-content h2 { font-family: var(--font-display); color: var(--gold); margin-top: 0; }
+.modal-content h3 { font-family: var(--font-display); margin-top: 30px; margin-bottom: 10px; }
+.modal-content p { margin-bottom: 15px; font-size: 15px; color: #dcd6cc; line-height: 1.7; }
+/* ===== Адаптация меню для телефонов ===== */
+.menu-item {
+  min-width: 0;
+  gap: 0;
+}
+
+.menu-item > div:first-child {
+  min-width: 0;
+}
+
+.menu-item-name {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.menu-item-dots {
+  min-width: 12px;
+}
+
+.menu-item-weight {
+  flex-shrink: 0;
+}
+
+.menu-item-price {
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .menu-category-title {
+    font-size: 28px;
+  }
+
+  .menu-item {
+    gap: 7px;
+    margin-bottom: 18px;
+  }
+
+  .menu-item-name {
+    font-size: 14px;
+  }
+
+  .menu-item-desc {
+    font-size: 12px;
+  }
+
+  .menu-item-weight {
+    font-size: 12px;
+    margin-right: 0;
+  }
+
+  .menu-item-price {
+    font-size: 15px;
+  }
+
+  .menu-item-dots {
+    margin: 0 3px;
+  }
+
+  .pdf-download-block {
+    padding: 22px 16px;
+  }
+
+  .modal-content {
+    padding: 28px 20px;
+  }
+} 
+
+/* ===== АНИМАЦИИ ХИНКАЛЬНОЙ №1 ===== */
+
+/* Плавное появление первого экрана */
+.hero-content {
+  animation: heroAppear 1.2s ease-out both;
+}
+
+@keyframes heroAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Появление разделов при прокрутке */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Золотое свечение кнопок */
+.btn-gold {
+  box-shadow: 0 0 0 rgba(200,169,106,0);
+}
+
+.btn-gold:hover {
+  box-shadow: 0 0 22px rgba(200,169,106,.35);
+  transform: translateY(-2px);
+}
+
+/* Плавное увеличение фотографий */
+.split img {
+  transition: transform .6s ease, box-shadow .6s ease;
+}
+
+.split img:hover {
+  transform: scale(1.025);
+  box-shadow: 0 15px 40px rgba(200,169,106,.18);
+}
+
+/* Уважение к настройке уменьшения анимации */
+@media (prefers-reduced-motion: reduce) {
+  .hero-content,
+  .reveal,
+  .split img,
+  .btn {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+} 
+
+/* ===== НОВОГОДНИЙ ДЕКОР ===== */
+
+/* Верхняя гирлянда */
+.ny-garland {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  z-index: 9998;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, #ffe6a3 0 3px, transparent 4px)
+    0 5px / 55px 15px repeat-x;
+  filter: drop-shadow(0 0 5px #d6a94e);
+  opacity: .85;
+}
+
+/* Снег */
+.ny-snow {
+  position: fixed;
+  top: -20px;
+  z-index: 9997;
+  pointer-events: none;
+  color: #fff8e9;
+  text-shadow: 0 0 7px #fff;
+  animation: nyFall linear forwards;
+}
+
+@keyframes nyFall {
+  to {
+    transform: translate3d(var(--drift), 110vh, 0) rotate(360deg);
+    opacity: .15;
+  }
+}
+
+/* Золотое праздничное сияние */
+.hero-content {
+  position: relative;
+}
+
+.hero-content::after {
+  content: "✦";
+  position: absolute;
+  right: 4%;
+  top: 5%;
+  color: #d9b66f;
+  font-size: 30px;
+  opacity: .8;
+  animation: nySparkle 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes nySparkle {
+  0%, 100% { opacity: .25; transform: scale(.8) rotate(0); }
+  50% { opacity: 1; transform: scale(1.2) rotate(25deg); }
+}
+
+/* Уважение к настройке уменьшения анимации */
+@media (prefers-reduced-motion: reduce) {
+  .ny-snow, .hero-content::after {
+    animation: none !important;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- ===== ШАПКА ===== -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Хинкальная №1 — на главную">Хинкальная <b>№1</b></a>
+
+    <nav class="nav-links" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#ny">Новогоднее предложение 🎄</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Два номера телефона в шапке -->
+      <div class="phone-group">
+        <a class="phone" href="tel:+79639397011">+7 (963) 939-70-11</a>
+        <a class="phone" href="tel:+79308913028">+7 (930) 891-30-28</a>
+      </div>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#about">О нас</a>
+    <a href="#menu">Меню</a>
+    <a href="#ny">Новогоднее предложение</a>
+    <a href="#contacts">Контакты</a>
+    <div class="phone-group" style="align-items:flex-start; margin-top:10px;">
+      <a class="phone" href="tel:+79639397011">+7 (963) 939-70-11</a>
+      <a class="phone" href="tel:+79308913028">+7 (930) 891-30-28</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO (Главный экран с хинкали) ===== -->
+<section class="hero" id="top">
+  <picture class="hero-media">
+    <img
+      src="IMG_20261126_130150.jpg"
+      alt="Хинкали ручной лепки в Хинкальной №1"
+      fetchpriority="high"
+    >
+  </picture>
+
+    <div class="wrap hero-content">
+    <p class="eyebrow">Грузинская кухня · Новомосковск</p>
+    <h1>Хинкальная <span>№1</span></h1>
+    <p class="lead">
+      Настоящая грузинская кухня. Лепим хинкали вручную, печём хачапури по традиционным рецептам. Ждём вас в гости!
+    </p>
+  </div>
+</section>
+
+
+<!-- ===== О НАС ===== -->
+<section class="section section-alt" id="about">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Добро пожаловать</p>
+      <h2 class="section-title">Грузия в Новомосковске</h2>
+      <p>Настоящая грузинская кухня. Проводим Дни рождения, юбилеи, свадьбы, корпоративы, поминальные обеды.</p>
+      <br>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a class="btn btn-gold" href="tel:+79639397011">Забронировать по +7 (963) 939-70-11</a>
+        <a class="btn btn-outline" href="tel:+79308913028">Забронировать по +7 (930) 891-30-28</a>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop" alt="Атмосфера Хинкальной №1">
+  </div>
+</section>
+
+<!-- ===== МЕНЮ ===== -->
+<section class="section" id="menu">
+  <div class="wrap">
+    <p class="eyebrow">Кухня</p>
+    <h2 class="section-title">Наше меню</h2>
+    
+    <div class="menu-category">
+      <h3 class="menu-category-title">Хинкали</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div><span class="menu-item-name">Свинина / говядина</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">4 шт.</span>
+          <span class="menu-item-price">400 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Баранина / говядина</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">4 шт.</span>
+          <span class="menu-item-price">480 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">С курицей</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">4 шт.</span>
+          <span class="menu-item-price">400 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">С грибами</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">4 шт.</span>
+          <span class="menu-item-price">400 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">С сыром</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">4 шт.</span>
+          <span class="menu-item-price">400 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Жареные</span>
+            <span class="menu-item-desc">свинина/говядина, баранина/говядина, курица</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">4 шт.</span>
+          <span class="menu-item-price">640 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Хинкали от шефа</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">4 шт.</span>
+          <span class="menu-item-price">520 ₽</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h3 class="menu-category-title">Холодные закуски</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div><span class="menu-item-name">Язык говяжий отварной с хреном</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">100/20 г</span>
+          <span class="menu-item-price">600 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Сельдь по-русски</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">80/80 г</span>
+          <span class="menu-item-price">350 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Мясное ассорти</span>
+            <span class="menu-item-desc">язык говяжий, буженина, куриные рулетики</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">240/50 г</span>
+          <span class="menu-item-price">1100 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Рыбное ассорти</span>
+            <span class="menu-item-desc">с/с семга, масляная рыбка, маслины, лимон</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200/20 г</span>
+          <span class="menu-item-price">1200 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Сациви</span>
+            <span class="menu-item-desc">куриное филе под ореховым соусом</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">620 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Овощной букет</span>
+            <span class="menu-item-desc">помидоры, огурцы, болгарский перец, зелень</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">400 г</span>
+          <span class="menu-item-price">550 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Соленья</span>
+            <span class="menu-item-desc">чеснок, перец, огурец, помидор, капуста</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">350 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Пхали в ассортименте</span>
+            <span class="menu-item-desc">лобио, свекла, баклажан, шпинат</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">250 г</span>
+          <span class="menu-item-price">700 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Рулетики из баклажан</span>
+            <span class="menu-item-desc">грецкий орех, гранат, приправы</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">150 г</span>
+          <span class="menu-item-price">500 ₽</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h3 class="menu-category-title">Сыры</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Сырная тарелка</span>
+            <span class="menu-item-desc">4 вида сыра, виноград, мед</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">800 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Сыр Сулугуни</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">100 г</span>
+          <span class="menu-item-price">250 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Сыр Брынза</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">100 г</span>
+          <span class="menu-item-price">230 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Сыр Чанах</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">100 г</span>
+          <span class="menu-item-price">180 ₽</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h3 class="menu-category-title">Салаты</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Каприз</span>
+            <span class="menu-item-desc">телятина, ветчина, язык, соленый огурец, майонез, гранат</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">150 г</span>
+          <span class="menu-item-price">680 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Теплый салат</span>
+            <span class="menu-item-desc">с куриной печенью и апельсином, грейнфрутом</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">220 г</span>
+          <span class="menu-item-price">600 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Салат из авокадо</span>
+            <span class="menu-item-desc">креветки, зеленый салат, авокадо, оливки, майонез, сметана</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">150 г</span>
+          <span class="menu-item-price">650 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Цезарь с курицей</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">500 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Цезарь с креветками</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">600 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Салат Тбилиси</span>
+            <span class="menu-item-desc">говядина, болгарский перец, лук, лобио</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">620 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div>
+            <span class="menu-item-name">Салат по-грузински</span>
+            <span class="menu-item-desc">помидоры, огурец, сванская соль, зелень, перец</span>
+          </div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">500 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Греческий</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">200 г</span>
+          <span class="menu-item-price">500 ₽</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-category">
+      <h3 class="menu-category-title">Горячие закуски</h3>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div><span class="menu-item-name">Жульен с курицей и грибами</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">120 г</span>
+          <span class="menu-item-price">350 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Жульен с грибами</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">120 г</span>
+          <span class="menu-item-price">350 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Жульен с креветками</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">120 г</span>
+          <span class="menu-item-price">400 ₽</span>
+        </li>
+        <li class="menu-item">
+          <div><span class="menu-item-name">Жареный сулугуни с помидорами</span></div>
+          <div class="menu-item-dots"></div>
+          <span class="menu-item-weight">120 г</span>
+          <span class="menu-item-price">380 ₽</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ===== БЛОК ДЛЯ СКАЧИВАНИЯ PDF ===== -->
+    <div class="pdf-download-block">
+      <p>Хотите посмотреть полное меню с красивыми фотографиями всех блюд?</p>
+      <a
+  href="Меню%20А5.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="btn btn-outline"
+>
+  📄 Открыть PDF-меню
+</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== НОВОГОДНЕЕ ПРЕДЛОЖЕНИЕ ===== -->
+<section class="section section-alt" id="ny">
+  <div class="wrap">
+    <div class="ny-block">
+      <h2>Новогоднее предложение 🎄</h2>
+      <p><strong>25, 27, 28, 29 и 30 декабря 2026 года, с 18:00 до 23:30</strong> у нас будет проходить выступление одного из лучших DJ и шоуменов нашего города.</p>
+      <p>Весёлые конкурсы, отличная музыка, новогодние поздравления и море позитива гарантированно!</p>
+      <p>У нас будет как всегда 😋 и весело</p>
+      <div class="ny-emoji">🎄 🎄 🎄 🎉 🎉 🎉</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== КОНТАКТЫ ===== -->
+<section class="section" id="contacts">
+  <div class="wrap contacts">
+    <div>
+      <p class="eyebrow">Как нас найти</p>
+      <h2 class="section-title">Контакты</h2>
+      <p><strong>Адрес:</strong> г. Новомосковск, ул. Кукунина 9Гк1</p>
+      
+      <p><strong>Телефоны:</strong></p>
+      <p style="margin-bottom: 5px;"><a href="tel:+79639397011">+7 (963) 939-70-11</a></p>
+      <p><a href="tel:+79308913028">+7 (930) 891-30-28</a></p>
+      
+      <p style="margin-top: 20px;"><strong>Часы:</strong> ежедневно 11:00–23:00</p>
+    </div>
+    <div class="map">
+      <iframe src="https://yandex.ru/map-widget/v1/?text=Новомосковск%20улица%20Кукунина%209Гк1" loading="lazy" title="Карта: Хинкальная №1"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ПЛАВАЮЩАЯ КНОПКА ЗВОНКА ДЛЯ ТЕЛЕФОНОВ ===== -->
+<!-- Сейчас она звонит на первый номер. Если нужно на второй — поменяй href -->
+<a href="tel:+79639397011" class="mobile-call-btn">📞 Позвонить и забронировать</a>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Хинкальная №1</span>
+    <!-- Ссылка на открытие соглашения -->
+    <a href="#" id="open-legal">Пользовательское соглашение и Политика конфиденциальности</a>
+  </div>
+</footer>
+
+<!-- ===== МОДАЛЬНОЕ ОКНО (СОГЛАШЕНИЕ) ===== -->
+<div
+  class="modal-overlay"
+  id="legal-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="legal-title"
+> 
+  <div class="modal-content">
+    <button
+  class="modal-close"
+  id="close-legal"
+  aria-label="Закрыть соглашение"
+>&times;</button>
+    
+    <h2 id="legal-title">Пользовательское соглашение</h2>
+    <p>Настоящее Пользовательское соглашение (далее — Соглашение) регулирует отношения между ООО «Хинкальная №1» (далее — Администрация) и любым лицом, использующим сайт (далее — Пользователь).</p>
+    
+    <h3>1. Общие положения</h3>
+    <p>1.1. Использование сайта означает полное и безоговорочное согласие Пользователя с настоящим Соглашением и указанными в нем условиями.</p>
+    <p>1.2. Сайт носит исключительно информационный характер и предоставляет информацию о меню, ценах и услугах ресторана.</p>
+    <p>1.3. Администрация оставляет за собой право в любое время изменять условия Соглашения без специального уведомления Пользователя.</p>
+    
+    <h3>2. Информация и цены</h3>
+    <p>2.1. Вся информация о блюдах, их составе, граммовках и ценах, представленная на сайте, носит справочный характер. Актуальную информацию уточняйте по телефонам, указанным на сайте.</p>
+    <p>2.2. Администрация не несет ответственности за возможные расхождения между информацией на сайте и фактическим меню в ресторане.</p>
+
+    <h2 style="margin-top: 40px;">Политика конфиденциальности</h2>
+    <h3>1. Сбор и использование персональных данных</h3>
+    <p>1.1. Настоящий сайт не использует формы сбора персональных данных (нет форм регистрации или обратной связи, требующих ввода личных данных).</p>
+    <p>1.2. При нажатии на кнопки «Позвонить» сайт использует стандартный протокол связи вашего устройства (телефонное приложение). Сайт не собирает и не сохраняет историю ваших звонков или номера телефонов.</p>
+    
+    <h3>2. Cookies и аналитика</h3>
+    <p>2.1. Сайт может использовать технические файлы cookie, необходимые для корректного отображения страниц и анализа посещаемости (например, Яндекс.Метрика). Эти данные обезличены.</p>
+    
+    <h3>3. Контакты</h3>
+    <p>По всем вопросам, связанным с работой сайта, вы можете обратиться по телефонам: +7 (963) 939-70-11 или +7 (930) 891-30-28.</p>
+  </div>
+</div>
+
+<script>
+
+// Бургер-меню
+document.querySelectorAll('.nav-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const menu = document.getElementById(btn.getAttribute('aria-controls'));
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    menu.hidden = open;
+  });
+});
+// Закрытие мобильного меню по клику на ссылку
+document.querySelectorAll('#mobile-menu a').forEach(a => {
+  a.addEventListener('click', () => {
+    const menu = document.getElementById('mobile-menu');
+    const btn = document.querySelector('.nav-toggle');
+    menu.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Логика модального окна соглашения
+const modal = document.getElementById('legal-modal');
+const openBtn = document.getElementById('open-legal');
+const closeBtn = document.getElementById('close-legal');
+// Закрытие соглашения клавишей Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.classList.contains('active')) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+
+openBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Блокируем скролл фона
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+});
+
+// Закрытие по клику вне окна
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+
+// ===== АНИМАЦИЯ ПОЯВЛЕНИЯ РАЗДЕЛОВ =====
+
+const revealElements = document.querySelectorAll(
+  '.section-title, .split, .menu-category, .ny-block, .contacts'
+);
+
+revealElements.forEach(element => {
+  element.classList.add('reveal');
+});
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12
+  });
+
+  revealElements.forEach(element => {
+    observer.observe(element);
+  });
+} else {
+  revealElements.forEach(element => {
+    element.classList.add('visible');
+  });
+}
+ 
+
+/* ===== НОВОГОДНИЙ СНЕГОПАД ===== */
+
+const garland = document.createElement('div');
+garland.className = 'ny-garland';
+document.body.appendChild(garland);
+
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  function createSnowflake() {
+    const snow = document.createElement('span');
+    snow.className = 'ny-snow';
+    snow.textContent = Math.random() > 0.5 ? '❄' : '✧';
+
+    snow.style.left = Math.random() * 100 + 'vw';
+    snow.style.fontSize = (8 + Math.random() * 10) + 'px';
+    snow.style.opacity = 0.3 + Math.random() * 0.6;
+    snow.style.animationDuration = (7 + Math.random() * 9) + 's';
+    snow.style.setProperty('--drift', (Math.random() * 100 - 50) + 'px');
+
+    document.body.appendChild(snow);
+
+    snow.addEventListener('animationend', () => snow.remove());
+  }
+
+  setInterval(createSnowflake, 450);
+}
+
+</script>
+</body>
+</html>
