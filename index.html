@@ -497,6 +497,19 @@ img{display:block;max-width:100%}
 }
 
 
+
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.gallery-grid a{display:block;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .3s}
+.gallery-grid a:hover img{transform:scale(1.04)}
+.gallery-video{margin:32px auto 0;max-width:850px;text-align:center}
+.gallery-video video{display:block;width:100%;max-height:75vh;background:#000;border:1px solid var(--line);border-radius:14px}
+#photo-view{max-width:95vw;max-height:95vh;background:#11110f;color:var(--gold);border:1px solid var(--gold);border-radius:12px;padding:12px;text-align:center}
+#photo-view::backdrop{background:rgba(0,0,0,.9)}
+#photo-view img{max-width:85vw;max-height:76vh;object-fit:contain;margin:auto}
+#photo-view button{background:transparent;color:var(--gold);border:1px solid var(--line);border-radius:8px;padding:10px 18px;margin:8px;cursor:pointer}
+@media(max-width:640px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+@media(min-width:901px) and (max-width:1200px){.nav-links{gap:12px;font-size:11px}.nav{gap:12px}}
 </style>
 </head>
 <body>
@@ -510,6 +523,7 @@ img{display:block;max-width:100%}
       <a href="#about">О нас</a>
       <a href="#menu">Меню</a>
       <a href="#ny">Новогоднее предложение 🎄</a>
+      <a href="#gallery">Галерея</a>
       <a href="#contacts">Контакты</a>
     </nav>
 
@@ -529,7 +543,8 @@ img{display:block;max-width:100%}
     <a href="#about">О нас</a>
     <a href="#menu">Меню</a>
     <a href="#ny">Новогоднее предложение</a>
-    <a href="#contacts">Контакты</a>
+    <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакты</a>
     <div class="phone-group" style="align-items:flex-start; margin-top:10px;">
       <a class="phone" href="tel:+79639397011">+7 (963) 939-70-11</a>
       <a class="phone" href="tel:+79308913028">+7 (930) 891-30-28</a>
@@ -873,6 +888,22 @@ img{display:block;max-width:100%}
   </div>
 </section>
 
+<section class="section section-alt" id="gallery"><div class="wrap">
+<p class="eyebrow">Фото и видео</p><h2 class="section-title">Атмосфера грузинского гостеприимства</h2>
+<div class="gallery-grid"><a href="gallery/photo-1.jpg"><img src="gallery/photo-1.jpg" alt="Банкетная сервировка Хинкальной №1, фото 1" loading="lazy"></a>
+<a href="gallery/photo-2.jpg"><img src="gallery/photo-2.jpg" alt="Банкетная сервировка Хинкальной №1, фото 2" loading="lazy"></a>
+<a href="gallery/photo-3.jpg"><img src="gallery/photo-3.jpg" alt="Банкетная сервировка Хинкальной №1, фото 3" loading="lazy"></a>
+<a href="gallery/photo-4.jpg"><img src="gallery/photo-4.jpg" alt="Банкетная сервировка Хинкальной №1, фото 4" loading="lazy"></a>
+<a href="gallery/photo-5.jpg"><img src="gallery/photo-5.jpg" alt="Банкетная сервировка Хинкальной №1, фото 5" loading="lazy"></a>
+<a href="gallery/photo-6.jpg"><img src="gallery/photo-6.jpg" alt="Банкетная сервировка Хинкальной №1, фото 6" loading="lazy"></a>
+<a href="gallery/photo-7.jpg"><img src="gallery/photo-7.jpg" alt="Банкетная сервировка Хинкальной №1, фото 7" loading="lazy"></a>
+<a href="gallery/photo-8.jpg"><img src="gallery/photo-8.jpg" alt="Банкетная сервировка Хинкальной №1, фото 8" loading="lazy"></a>
+<a href="gallery/photo-9.jpg"><img src="gallery/photo-9.jpg" alt="Банкетная сервировка Хинкальной №1, фото 9" loading="lazy"></a>
+</div>
+<div class="gallery-video"><h3>Загляните к нам в гости</h3><video controls playsinline preload="none" poster="gallery/photo-1.jpg"><source src="gallery/restaurant.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video></div>
+</div></section>
+<dialog id="photo-view" aria-label="Просмотр фотографий"><button id="photo-close" aria-label="Закрыть">✕</button><img alt="Фотография ресторана"><div><button id="photo-prev" aria-label="Предыдущая">❮</button><span id="photo-count"></span><button id="photo-next" aria-label="Следующая">❯</button></div></dialog>
+
 <!-- ===== КОНТАКТЫ ===== -->
 <section class="section" id="contacts">
   <div class="wrap contacts">
@@ -1056,6 +1087,18 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   setInterval(createSnowflake, 450);
 }
 
+</script>
+<script>
+(()=>{const links=[...document.querySelectorAll('.gallery-grid a')],d=document.getElementById('photo-view'),im=d.querySelector('img');let i=0,x=0;
+function show(n){i=(n+links.length)%links.length;im.src=links[i].href;im.alt=links[i].querySelector('img').alt;document.getElementById('photo-count').textContent=(i+1)+' / '+links.length}
+links.forEach((a,n)=>a.addEventListener('click',e=>{if(!d.showModal)return;e.preventDefault();show(n);d.showModal()}));
+document.getElementById('photo-close').onclick=()=>d.close();
+document.getElementById('photo-prev').onclick=()=>show(i-1);
+document.getElementById('photo-next').onclick=()=>show(i+1);
+d.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)});
+im.addEventListener('touchstart',e=>x=e.changedTouches[0].clientX,{passive:true});
+im.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-x;if(Math.abs(dx)>45)show(i+(dx<0?1:-1))},{passive:true});
+})();
 </script>
 </body>
 </html>
